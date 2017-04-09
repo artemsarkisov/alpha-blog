@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11af41a2-140e-492d-b5d6-a025dd9f1702" name="Default" comment="initial commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/article.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170409095831_create_articles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170409100735_add_description_to_arcticles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/alpha-blog.iml" afterPath="$PROJECT_DIR$/.idea/alpha-blog.iml" />
+    <list default="true" id="11af41a2-140e-492d-b5d6-a025dd9f1702" name="Default" comment="Create article's table, model and add validations">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/articles.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/article_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,8 +76,8 @@
       <file leaf-file-name="article.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/article.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,8 +161,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -400,7 +397,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -588,7 +584,7 @@
       <workItem from="1491688047854" duration="69000" />
       <workItem from="1491688576287" duration="546000" />
       <workItem from="1491689168759" duration="4184000" />
-      <workItem from="1491731845980" duration="3035000" />
+      <workItem from="1491731845980" duration="3159000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1491689903494</created>
@@ -597,21 +593,29 @@
       <option name="project" value="LOCAL" />
       <updated>1491689903494</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create article's table, model and add validations">
+      <created>1491734976433</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491734976433</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8122000" />
+    <option name="totallyTimeSpent" value="8246000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66857964" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34701493" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" x="21" y="218" width="1398" height="463" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40143886" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" x="21" y="218" width="1398" height="463" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -661,7 +665,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Create article's table, model and add validations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create article's table, model and add validations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -914,8 +919,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/article.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
